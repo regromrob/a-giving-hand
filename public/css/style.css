@@ -12,6 +12,9 @@
    
 }
 img{
-    width: 45%;
-    filter: drop-shadow(10px 7px 2px grey)
+    margin:auto;
+    display:block;
+    width: 50%;
+    filter: drop-shadow(10px 7px 2px grey);
+    
 }
