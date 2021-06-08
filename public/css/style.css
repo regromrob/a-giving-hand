@@ -5,13 +5,13 @@
     color:#fddca5;;
     font-size: 30px;
 }
-.idk{
+.landingHead{
     background-image: url('https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80');
     background-size:cover;
     height: 400px;
    
 }
 img{
-    width: 50%;
+    width: 45%;
     filter: drop-shadow(10px 7px 2px grey)
 }
