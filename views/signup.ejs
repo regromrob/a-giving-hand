@@ -1,5 +1,5 @@
 <%- include('partials/header') -%>
-    <main class="container">
+    <main class="container mt-4">
         <div class="row justify-content-center">
             <section class="col-6 mt-5">
                 <% if (locals.messages.errors) { %>
@@ -14,35 +14,44 @@
                 <% } %>
                 
                 <form action="/signup" method="POST">
-                  <div>
-                    <input type="radio" name="category" id="org">
-                    <label for="Org">Nonprofit</label>
-                    <input type="radio" name="category" id="volunteer">
-                    <label for="Org">Donor</label>
-                  </div>
+                 
                     <div class="mb-3">
-                        <label for="userName" class="form-label">Name</label>
+                        <label for="userName" class="form-label">Organization Name:</label>
                         <input type="text" class="form-control" id="userName" name="userName">
                       </div>
-                      <div class="mb-3">
-                        <label for="city" class="form-label">City</label>
+                      <div class="row g-3">
+                        <div class="col-sm-7">
+                          <label for="city" class="form-label">City:</label>
+                          <input type="text" class="form-control" aria-label="City">
+                        </div>
+                        <div class="col-sm">
+                          <label for="state" class="form-label">State:</label>
+                          <input type="text" class="form-control" aria-label="State">
+                        </div>
+                        <div class="col-sm">
+                          <label for="zip" class="form-label">Zip:</label>
+                          <input type="text" class="form-control" aria-label="Zip">
+                        </div>
+                      </div>
+                      <!-- <div class="mb-3">
+                        <label for="city" class="form-label">City:</label>
                         <input type="text" class="form-control" id="city" name="city">
                       </div>
                       <div class="mb-3">
-                        <label for="state" class="form-label">State</label>
+                        <label for="state" class="form-label">State:</label>
                         <input type="text" class="form-control" id="state" name="state">
-                      </div>
+                      </div> -->
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <label for="exampleInputEmail1" class="form-label">Email address:</label>
                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
                       <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                     </div>
                     <div class="mb-3">
-                      <label for="password" class="form-label">Password</label>
+                      <label for="password" class="form-label">Password:</label>
                       <input type="password" class="form-control" id="password" name="password">
                     </div>
                     <div class="mb-3">
-                        <label for="confirmPassword" class="form-label">Confirm Password</label>
+                        <label for="confirmPassword" class="form-label">Confirm Password:</label>
                         <input type="password" class="form-control" id="confirmPassword" name="confirmPassword">
                       </div>
                     <button type="submit" class="btn">Submit</button>
