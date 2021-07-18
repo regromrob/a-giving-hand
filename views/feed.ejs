@@ -5,10 +5,11 @@
         <% for(var i=0; i<posts.length; i++) {%>
           
           <li class="col-6 justify-content-between mt-5 card">
+            <p class="card-text"><%= posts[i].caption %></p>
             <a href="/post/<%= posts[i]._id%>">
               <img class="img-fluid card-img-top" src="<%= posts[i].image%>">
             </a>
-            <p class="card-text"><%= posts[i].caption %></p>
+            
           </li>
         <% } %>
         </ul>
