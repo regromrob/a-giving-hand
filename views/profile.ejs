@@ -1,13 +1,17 @@
 <%- include('partials/header') -%>
 <div class="container">
-  <div class="row mt-5">
-      <div class="col-6">
-          <div>
-              <p><strong>User Name</strong>: <%= user.userName %></p>
+  <div class="col mt-5">
+   
+      <div class="row d-flex justify-content-center mt-4">
+         
+          
+            <div class="col mt-5">
+              <h1><strong>Welcome, <%= user.userName %></strong></h1>
+              <!--READ figure out how to save city, state &put it under name-then push name down -->
               <!-- <p><strong>Email</strong>: <%= user.email %></p> -->
         
-          </div>
-          <div class="mt-5">
+            </div>
+            <div class="col mt-2">
             <h2>Add a post</h2>
             <form action="/post/createPost" enctype="multipart/form-data" method="POST">
               <div class="mb-3">
@@ -26,13 +30,16 @@
             </form>
           </div>
       </div>
-      <div class="col-6">
+      <div class=" mt-4 ">
+        <h2>Latest Posts</h2>
         <ul class="row list-unstyled">
         <% for(var i=0; i<posts.length; i++) {%>
-          <li class="col-6 justify-content-between mt-5">
+          <li class="col-3 mt-5">
+            <!-- <h5 ><%= posts[i].title %></h5> -->
             <a href="/post/<%= posts[i]._id%>">
               <img class="img-fluid" src="<%= posts[i].image%>">
             </a>
+
           </li>
         <% } %>
         </ul>
