@@ -17,7 +17,7 @@
     </div>
   </div>   -->
 
-  <div class="container mb-3 " style="max-width: 540px;">
+  <!-- <div class="container mb-3 " style="max-width: 540px;">
     <div class="row g-0 mt-5 ">
       <% for(var i=0; i<posts.length; i++) {%>
         
@@ -32,13 +32,34 @@
           <p class="card-text"><small> <%= posts[i].city %>, <%= posts[i].state %></small></p>
           <p class="card-text"><%= posts[i].caption %></p>
     <h6><small> Likes: <%= posts[i].likes %></small></h6>
+    <p class="card-text"><small class="text-muted"><%= posts[i].createdAt.toDateString() %></small></p>
         </div>
       </div>
     
       <% } %>
     </div>
+  </div> -->
+
+  <div class="container g-4 " style="max-width: 540px;">
+  <div class="col d-grid gap-4 mt-5">
+    <% for(var i=0; i<posts.length; i++) {%>
+    <div class="card h-100">
+      <a href="/post/<%= posts[i]._id%>">
+        <img class="card-img-top" src="<%= posts[i].image%>">
+      </a>
+      <!-- <img src="..." class="card-img-top" alt="..."> -->
+      <div class="card-body">
+        <h5 class="card-title"><%= posts[i].title %></h5>
+        <p class="card-text"><small> <%= posts[i].city %>, <%= posts[i].state %></small></p>
+        <p class="card-text"><%= posts[i].caption %></p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"><%= posts[i].createdAt.toDateString() %></small>
+      </div>
+    </div>
+    <% } %>
   </div>
-  
+</div>
 
  
 <!-- <%- include('partials/footer') -%> -->
