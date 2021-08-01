@@ -47,6 +47,8 @@ module.exports = {
         likes: 0,
         user: req.user.id,
         // user: req.user.userName,
+        city: req.body.city,
+        state:req.body.state
       });
       console.log("Post has been added!");
       res.redirect("/profile");

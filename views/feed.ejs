@@ -29,8 +29,9 @@
       <div class="col-md-8 mt-4 card-background">
         <div class="card-body">
           <h5 class="card-title"><%= posts[i].title %></h5>
+          <p class="card-text"><small> <%= posts[i].city %>, <%= posts[i].state %></small></p>
           <p class="card-text"><%= posts[i].caption %></p>
-          
+    <h6><small> Likes: <%= posts[i].likes %></small></h6>
         </div>
       </div>
     
