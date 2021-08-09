@@ -1,66 +1,75 @@
-html{
-    margin:0;
-}
-.makefix{
-    position: fixed;
-    top:0;
-    width: 100%;
-    z-index: 1;
+* {
+    box-sizing: border-box;
 }
 
-.softyellow{
-    background-color: #fab73d 
+
+
+.header-footer-background{
+    background-color:#dcaab1;
 }
-.yellow1{
-    color:#fddca5;;
+.titleColor{
+    color:#a63d4c;
     font-size: 30px;
 }
 
-.yellow1:hover{
-color:#546747;
+.titleColor:hover{
+color:white;
 }
 
-.landingHead{
-    background-image: url('https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80');
-    background-size:cover;
-    height: 700px;
-   
-}
 .make-small{
     margin:auto;
-    display:block;
-    width: 50%;
+     display:block; 
     filter: drop-shadow(10px 7px 2px grey);
     
 }
 
-
-
 .btn{
-    background-color: #fddca5;
+    background-color: #dcaab1;
+}
+.btn:hover{
+    background-color: #a63d4c;
 }
 
 a{
     text-decoration: none;
-    color: #546747;
+    color: white;
 }
 
 a:hover{
-    color:#bbc8ba ;
+    color:#a63d4c;
+}
+#view{
+    color: white;
 }
 
+
 h2{
-    color: #546747;
+    color: rgb(146, 50, 74);
     text-align: center;
     padding: 1rem 0;
 }
 
-.card-background{
-    background-color: rgb(224, 221, 221);
-}
 
 h1{
-    color: #546747;  
+    color: #e08e97;  
     text-transform: uppercase;
     
 }
+
+.backgroundPink{
+    background-color: rgba(163, 99, 120, 0.137);
+}
+
+.login-signin{
+    color: #a63d4c;
+}
+
+/* footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+  } */
